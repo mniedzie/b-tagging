@@ -67,7 +67,7 @@ process.options   = cms.untracked.PSet(
     wantSummary = cms.untracked.bool(options.wantSummary),
     allowUnscheduled = cms.untracked.bool(True)
 )
-getattr(process,'slimmedJets').addTagInfos = cms.bool(True)
+#getattr(process,'slimmedJets').addTagInfos = cms.bool(True)
 ## Initialize analyzer
 process.bTaggingExerciseII = cms.EDAnalyzer('BTaggingExerciseII',
     jets = cms.InputTag('slimmedJets'), # input jet collection name
